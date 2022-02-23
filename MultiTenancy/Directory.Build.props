@@ -1,0 +1,10 @@
+<Project>
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+        <TargetFramework>net6.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+</Project>

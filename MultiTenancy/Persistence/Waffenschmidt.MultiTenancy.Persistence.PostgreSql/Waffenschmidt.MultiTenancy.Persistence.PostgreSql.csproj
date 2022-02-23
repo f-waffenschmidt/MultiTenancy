@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.Abstractions\Waffenschmidt.MultiTenancy.Persistence.Abstractions.csproj" />
+      <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.3" />
+    </ItemGroup>
+
+</Project>
