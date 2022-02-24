@@ -1,0 +1,57 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.0.x'
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '6.0.0'
+    checkLatest: true
+
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '*.sln'
+    feedsToUse: 'select'
+    vstsFeed: 'a97a1f40-5ba1-4cd0-94d5-d20ad35b0981'
+
+- task: VSBuild@1
+  inputs:
+    solution: '**\*.sln'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+    clean: true
+    maximumCpuCount: true
+    restoreNugetPackages: true
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'src/**/*.csproj;src/Persistence/**/*.csproj'
+    versioningScheme: 'byPrereleaseNumber'
+    majorVersion: '1'
+    minorVersion: '0'
+    patchVersion: '2'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'a97a1f40-5ba1-4cd0-94d5-d20ad35b0981'
