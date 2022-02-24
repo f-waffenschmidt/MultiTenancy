@@ -29,8 +29,8 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '*.sln'
-    feedsToUse: 'select'
-    vstsFeed: 'a97a1f40-5ba1-4cd0-94d5-d20ad35b0981'
+    feedsToUse: 'config'
+    nugetConfigPath: 'NuGet.config'
 
 - task: VSBuild@1
   inputs:
@@ -45,13 +45,11 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'src/**/*.csproj;src/Persistence/**/*.csproj'
-    versioningScheme: 'byPrereleaseNumber'
-    majorVersion: '1'
-    minorVersion: '0'
-    patchVersion: '2'
+    includesymbols: true
+    versioningScheme: 'off'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'a97a1f40-5ba1-4cd0-94d5-d20ad35b0981'
+    publishVstsFeed: '46ff4f95-9a2a-4cfb-951c-d0681e56a3b3'
