@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Pistolsmith.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Abstraction;
 
-namespace Pistolsmith.MultiTenancy.Core
+namespace Florez4Code.MultiTenancy.Core
 {
     /// <summary>
     /// DefaultTenantResolver

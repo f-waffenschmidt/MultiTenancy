@@ -4,8 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Pistolsmith.MultiTenancy.Persistence.Abstractions</RootNamespace>
-        <AssemblyName>Pistolsmith.MultiTenancy.Persistence.Abstractions</AssemblyName>
+        <RootNamespace>Florez4Code.MultiTenancy.Persistence.Abstractions</RootNamespace>
+        <AssemblyName>Florez4Code.MultiTenancy.Persistence.Abstractions</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

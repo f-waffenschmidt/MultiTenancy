@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Pistolsmith.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Abstraction;
 
-namespace Pistolsmith.MultiTenancy.Core.Middleware
+namespace Florez4Code.MultiTenancy.Core.Middleware
 {
     public class TenantResolveMiddleware<T> where T: Tenant
     {

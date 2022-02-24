@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Pistolsmith.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Abstraction;
 
-namespace Pistolsmith.MultiTenancy.Core.Resolver
+namespace Florez4Code.MultiTenancy.Core.Resolver
 {
     public class StaticTenantResolver : ITenantResolver<Tenant>
     {

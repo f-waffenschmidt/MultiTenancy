@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SchemaSeparation.Extensions
+namespace Florez4Code.MultiTenancy.Persistence.SchemaSeparation.Extensions
 {
     public static class IServiceCollectionExtensions
     {

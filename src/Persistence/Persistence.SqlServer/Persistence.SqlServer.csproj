@@ -4,9 +4,9 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Pistolsmith.MultiTenancy.Persistence.SqlServer</RootNamespace>
+        <RootNamespace>Florez4Code.MultiTenancy.Persistence.SqlServer</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <AssemblyName>Pistolsmith.MultiTenancy.Persistence.SqlServer</AssemblyName>
+        <AssemblyName>Florez4Code.MultiTenancy.Persistence.SqlServer</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

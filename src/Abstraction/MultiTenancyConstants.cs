@@ -1,4 +1,4 @@
-﻿namespace Pistolsmith.MultiTenancy.Abstraction
+﻿namespace Florez4Code.MultiTenancy.Abstraction
 {
     public class MultiTenancyConstants
     {

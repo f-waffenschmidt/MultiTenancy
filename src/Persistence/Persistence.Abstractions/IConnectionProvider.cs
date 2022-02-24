@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Pistolsmith.MultiTenancy.Persistence.Abstractions
+namespace Florez4Code.MultiTenancy.Persistence.Abstractions
 {
 
     /// <summary>

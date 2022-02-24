@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Persistence.Abstractions;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Persistence.Abstractions;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SchemaSeparation
+namespace Florez4Code.MultiTenancy.Persistence.SchemaSeparation
 {
     public class MultiTenantSchemaDbContext<TBuilder, TExtension> : DbContext, ISchemeDbContext
         where TBuilder : RelationalDbContextOptionsBuilder<TBuilder, TExtension>

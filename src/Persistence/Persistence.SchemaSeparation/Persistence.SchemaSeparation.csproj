@@ -4,8 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>Pistolsmith.MultiTenancy.Persistence.SchemaSeparation</RootNamespace>
-    <AssemblyName>Pistolsmith.MultiTenancy.Persistence.SchemaSeparation</AssemblyName>
+    <RootNamespace>Florez4Code.MultiTenancy.Persistence.SchemaSeparation</RootNamespace>
+    <AssemblyName>Florez4Code.MultiTenancy.Persistence.SchemaSeparation</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

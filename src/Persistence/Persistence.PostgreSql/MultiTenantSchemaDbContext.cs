@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Persistence.Abstractions;
-using Pistolsmith.MultiTenancy.Persistence.SchemaSeparation;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Persistence.Abstractions;
+using Florez4Code.MultiTenancy.Persistence.SchemaSeparation;
 
-namespace Pistolsmith.MultiTenancy.Persistence.PostgreSql
+namespace Florez4Code.MultiTenancy.Persistence.PostgreSql
 {
     public class MultiTenantSchemaDbContext : MultiTenantSchemaDbContext<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension>
     {

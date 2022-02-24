@@ -1,4 +1,4 @@
-﻿namespace Pistolsmith.MultiTenancy.Persistence.Abstractions
+﻿namespace Florez4Code.MultiTenancy.Persistence.Abstractions
 {
     public class DbConnectionConfiguration
     {

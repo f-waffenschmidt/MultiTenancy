@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Persistence.Abstractions;
-using Pistolsmith.MultiTenancy.Persistence.SchemaSeparation;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Persistence.Abstractions;
+using Florez4Code.MultiTenancy.Persistence.SchemaSeparation;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SqlServer
+namespace Florez4Code.MultiTenancy.Persistence.SqlServer
 {
     public class MultiTenantSchemaDbContext : MultiTenantSchemaDbContext<SqlServerDbContextOptionsBuilder, SqlServerOptionsExtension>
     {

@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Persistence.Abstractions;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Persistence.Abstractions;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SqlServer
+namespace Florez4Code.MultiTenancy.Persistence.SqlServer
 {
     public class SqlServerConnectionProvider : IConnectionProvider<SqlServerDbContextOptionsBuilder, SqlServerOptionsExtension>
     {

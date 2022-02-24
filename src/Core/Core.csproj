@@ -4,9 +4,9 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Pistolsmith.MultiTenancy.Core</RootNamespace>
+        <RootNamespace>Florez4Code.MultiTenancy.Core</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <AssemblyName>Pistolsmith.MultiTenancy.Core</AssemblyName>
+        <AssemblyName>Florez4Code.MultiTenancy.Core</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

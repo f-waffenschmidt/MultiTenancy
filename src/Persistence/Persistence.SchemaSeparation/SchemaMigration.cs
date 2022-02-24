@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SchemaSeparation
+namespace Florez4Code.MultiTenancy.Persistence.SchemaSeparation
 {
     public abstract class SchemaMigration : Migration
     {

@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Persistence.Abstractions;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Persistence.Abstractions;
 
-namespace Pistolsmith.MultiTenancy.Persistence.PostgreSql
+namespace Florez4Code.MultiTenancy.Persistence.PostgreSql
 {
     public class SqlServerConnectionProvider : IConnectionProvider<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension>
     {

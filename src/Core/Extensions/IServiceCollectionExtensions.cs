@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Pistolsmith.MultiTenancy.Abstraction;
-using Pistolsmith.MultiTenancy.Core.Resolver;
+using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Core.Resolver;
 
-namespace Pistolsmith.MultiTenancy.Core.Extensions
+namespace Florez4Code.MultiTenancy.Core.Extensions
 {
     public static class IServiceCollectionExtensions
     {

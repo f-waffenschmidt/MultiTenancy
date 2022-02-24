@@ -4,8 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Pistolsmith.MultiTenancy.Persistence.PostgreSql</RootNamespace>
-        <AssemblyName>Pistolsmith.MultiTenancy.Persistence.PostgreSql</AssemblyName>
+        <RootNamespace>Florez4Code.MultiTenancy.Persistence.PostgreSql</RootNamespace>
+        <AssemblyName>Florez4Code.MultiTenancy.Persistence.PostgreSql</AssemblyName>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 

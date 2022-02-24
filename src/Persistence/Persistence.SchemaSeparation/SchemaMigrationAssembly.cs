@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Internal;
 
-namespace Pistolsmith.MultiTenancy.Persistence.SchemaSeparation
+namespace Florez4Code.MultiTenancy.Persistence.SchemaSeparation
 {
     public class SchemaMigrationAssembly : MigrationsAssembly
     {

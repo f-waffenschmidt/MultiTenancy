@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Pistolsmith.MultiTenancy.Abstraction
+namespace Florez4Code.MultiTenancy.Abstraction
 {
     public interface ITenantResolver<T> where T : Tenant
     {
