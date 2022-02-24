@@ -16,7 +16,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{AACAA88B-D0B0-48F5-A7AA-CB416CED7C9B}"
 ProjectSection(SolutionItems) = preProject
 	Directory.Build.props = Directory.Build.props
-	NuGet.config = NuGet.config
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.PostgreSql", "Persistence\Persistence.PostgreSql\Persistence.PostgreSql.csproj", "{BB863B61-9871-493D-8D00-730BC18C0B32}"
