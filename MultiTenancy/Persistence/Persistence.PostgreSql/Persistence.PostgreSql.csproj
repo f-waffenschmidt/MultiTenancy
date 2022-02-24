@@ -4,11 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>MultiTenancy.Persistence.PostgreSql</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.Abstractions\Waffenschmidt.MultiTenancy.Persistence.Abstractions.csproj" />
-      <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation.csproj" />
+      <ProjectReference Include="..\Persistence.Abstractions\Persistence.Abstractions.csproj" />
+      <ProjectReference Include="..\Persistence.SchemaSeparation\Persistence.SchemaSeparation.csproj" />
     </ItemGroup>
 
     <ItemGroup>

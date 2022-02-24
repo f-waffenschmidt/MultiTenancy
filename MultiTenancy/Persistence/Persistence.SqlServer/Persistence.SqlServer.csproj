@@ -4,10 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>MultiTenancy.Persistence.SqlServer</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation.csproj" />
+      <ProjectReference Include="..\..\Abstraction\Abstraction.csproj" />
+      <ProjectReference Include="..\Persistence.SchemaSeparation\Persistence.SchemaSeparation.csproj" />
     </ItemGroup>
 
     <ItemGroup>

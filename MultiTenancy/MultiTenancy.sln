@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waffenschmidt.MultiTenancy.Abstraction", "Waffenschmidt.MultiTenancy.Abstraction\Waffenschmidt.MultiTenancy.Abstraction.csproj", "{5C694BA0-DA32-4FDF-AE02-FAF2A07BBE81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstraction", "Abstraction\Abstraction.csproj", "{5C694BA0-DA32-4FDF-AE02-FAF2A07BBE81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{CE0AF2E1-F2AF-4006-A2A7-69602962E1AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation", "Persistence\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation\Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation.csproj", "{090CB313-745F-497C-82E7-29F95A90C13F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.SchemaSeparation", "Persistence\Persistence.SchemaSeparation\Persistence.SchemaSeparation.csproj", "{090CB313-745F-497C-82E7-29F95A90C13F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waffenschmidt.MultiTenancy.Persistence.Abstractions", "Persistence\Waffenschmidt.MultiTenancy.Persistence.Abstractions\Waffenschmidt.MultiTenancy.Persistence.Abstractions.csproj", "{FFD692E6-C1D2-4AE7-81BF-E1B1F579FB68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.Abstractions", "Persistence\Persistence.Abstractions\Persistence.Abstractions.csproj", "{FFD692E6-C1D2-4AE7-81BF-E1B1F579FB68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waffenschmidt.MultiTenancy.Persistence.SqlServer", "Persistence\Waffenschmidt.MultiTenancy.Persistence.SqlServer\Waffenschmidt.MultiTenancy.Persistence.SqlServer.csproj", "{20A8FEC9-438F-4347-8E27-A95119C8C34E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.SqlServer", "Persistence\Persistence.SqlServer\Persistence.SqlServer.csproj", "{20A8FEC9-438F-4347-8E27-A95119C8C34E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{AACAA88B-D0B0-48F5-A7AA-CB416CED7C9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waffenschmidt.MultiTenancy.Persistence.PostgreSql", "Persistence\Waffenschmidt.MultiTenancy.Persistence.PostgreSql\Waffenschmidt.MultiTenancy.Persistence.PostgreSql.csproj", "{BB863B61-9871-493D-8D00-730BC18C0B32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.PostgreSql", "Persistence\Persistence.PostgreSql\Persistence.PostgreSql.csproj", "{BB863B61-9871-493D-8D00-730BC18C0B32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{995873BA-E393-4102-9D93-D5EBB103B20B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{BB863B61-9871-493D-8D00-730BC18C0B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB863B61-9871-493D-8D00-730BC18C0B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB863B61-9871-493D-8D00-730BC18C0B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995873BA-E393-4102-9D93-D5EBB103B20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995873BA-E393-4102-9D93-D5EBB103B20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995873BA-E393-4102-9D93-D5EBB103B20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995873BA-E393-4102-9D93-D5EBB103B20B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

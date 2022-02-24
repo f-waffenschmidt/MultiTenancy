@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Waffenschmidt.MultiTenancy.Abstraction;
-using Waffenschmidt.MultiTenancy.Persistence.Abstractions;
+using MultiTenancy.Abstraction;
+using MultiTenancy.Persistence.Abstractions;
+using Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation;
 
-namespace Waffenschmidt.MultiTenancy.Persistence.SchemaSeparation
+namespace MultiTenancy.Persistence.SchemaSeparation
 {
     public class MultiTenantSchemaDbContext<TBuilder, TExtension> : DbContext, ISchemeDbContext
         where TBuilder : RelationalDbContextOptionsBuilder<TBuilder, TExtension>

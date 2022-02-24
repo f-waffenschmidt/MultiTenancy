@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Data.Common;
 
-namespace Waffenschmidt.MultiTenancy.Abstraction
+namespace MultiTenancy.Abstraction
 {
-    public abstract class Tenant
+    public class Tenant
     {
         public Guid ExternalId { get; set; }
         public string Name { get; set; }
-
+        
+        public bool Enabled { get; set; }
+        
         public virtual string GetKey()
         {
             return Name;

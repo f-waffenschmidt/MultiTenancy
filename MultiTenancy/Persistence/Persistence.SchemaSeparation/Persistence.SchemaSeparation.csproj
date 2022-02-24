@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>MultiTenancy.Persistence.SchemaSeparation</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Waffenschmidt.MultiTenancy.Abstraction\Waffenschmidt.MultiTenancy.Abstraction.csproj" />
-    <ProjectReference Include="..\Waffenschmidt.MultiTenancy.Persistence.Abstractions\Waffenschmidt.MultiTenancy.Persistence.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Abstraction\Abstraction.csproj" />
+    <ProjectReference Include="..\Persistence.Abstractions\Persistence.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

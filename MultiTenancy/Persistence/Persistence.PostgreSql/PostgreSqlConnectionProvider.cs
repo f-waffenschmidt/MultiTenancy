@@ -1,13 +1,14 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
-using Waffenschmidt.MultiTenancy.Abstraction;
-using Waffenschmidt.MultiTenancy.Persistence.Abstractions;
+using MultiTenancy.Abstraction;
+using MultiTenancy.Persistence.Abstractions;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
 
-namespace Waffenschmidt.MultiTenancy.Persistence.SqlServer
+namespace MultiTenancy.Persistence.PostgreSql
 {
-    public class SqlServerConnectionProvider : IConnectionProvider<SqlServerDbContextOptionsBuilder, SqlServerOptionsExtension>
+    public class SqlServerConnectionProvider : IConnectionProvider<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension>
     {
         private readonly ITenantAccessor _tenantAccessor;
 
@@ -21,10 +22,10 @@ namespace Waffenschmidt.MultiTenancy.Persistence.SqlServer
         }
 
         public void UseDatabaseProvider(DbContextOptionsBuilder dbContextOptionsBuilder,
-            Action<RelationalDbContextOptionsBuilder<SqlServerDbContextOptionsBuilder, SqlServerOptionsExtension>>
+            Action<RelationalDbContextOptionsBuilder<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension>>
                 action)
         {
-            dbContextOptionsBuilder.UseSqlServer(GetDbConnectionConfiguration().ConnectionString, action);
+            dbContextOptionsBuilder.UseNpgsql(GetDbConnectionConfiguration().ConnectionString, action);
         }
     }
 }

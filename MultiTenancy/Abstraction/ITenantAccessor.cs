@@ -1,4 +1,4 @@
-﻿namespace Waffenschmidt.MultiTenancy.Abstraction
+﻿namespace MultiTenancy.Abstraction
 {
     public interface ITenantAccessor
     {

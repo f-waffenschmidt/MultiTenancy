@@ -6,3 +6,9 @@ MultiTenancy/Persistence/Waffenschmidt.MultiTenancy.Persistence.PostgreSql/obj
 MultiTenancy/Persistence/Waffenschmidt.MultiTenancy.Persistence.Abstractions/obj
 MultiTenancy/.vs/MultiTenancy/DesignTimeBuild
 MultiTenancy/.vs
+MultiTenancy/Abstraction/obj
+MultiTenancy/Core/obj
+MultiTenancy/Persistence/Persistence.Abstractions/obj
+MultiTenancy/Persistence/Persistence.PostgreSql/obj
+MultiTenancy/Persistence/Persistence.SchemaSeparation/obj
+MultiTenancy/Persistence/Persistence.SqlServer/obj
