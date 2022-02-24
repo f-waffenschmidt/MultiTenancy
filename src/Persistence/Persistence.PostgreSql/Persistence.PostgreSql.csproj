@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Pistolsmith.MultiTenancy.Persistence.PostgreSql</RootNamespace>
+        <AssemblyName>Pistolsmith.MultiTenancy.Persistence.PostgreSql</AssemblyName>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Persistence.Abstractions\Persistence.Abstractions.csproj" />
+      <ProjectReference Include="..\Persistence.SchemaSeparation\Persistence.SchemaSeparation.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.3" />
+    </ItemGroup>
+
+</Project>
