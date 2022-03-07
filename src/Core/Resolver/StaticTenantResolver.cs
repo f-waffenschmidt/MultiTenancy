@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Core.Options;
 
 namespace Florez4Code.MultiTenancy.Core.Resolver
 {
@@ -18,15 +19,5 @@ namespace Florez4Code.MultiTenancy.Core.Resolver
                 ? Task.FromResult<Tenant>(_multiTenancyOptions.StaticTenant)
                 : Task.FromResult<Tenant>(null);
         }
-    }
-
-    public class MultiTenancyOptions
-    {
-        public StaticTenant StaticTenant { get; set; }
-    }
-
-    public class StaticTenant : Tenant
-    {
-        public bool Enabled { get; set; }
     }
 }

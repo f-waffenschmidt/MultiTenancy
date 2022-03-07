@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Florez4Code.MultiTenancy.Abstraction;
+using Florez4Code.MultiTenancy.Core.Options;
 using Florez4Code.MultiTenancy.Core.Resolver;
 
 namespace Florez4Code.MultiTenancy.Core.Extensions

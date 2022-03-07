@@ -5,5 +5,8 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
         <Nullable>enable</Nullable>
+        <PackageDescription>This package provides functionalities for multi tenant applications</PackageDescription>
+        <RepositoryUrl>https://github.com/f-waffenschmidt/MultiTenancy</RepositoryUrl>
+        <Authors>Florian Waffenschmidt</Authors>
     </PropertyGroup>
 </Project>
